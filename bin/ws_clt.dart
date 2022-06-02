@@ -1,7 +1,9 @@
 import 'dart:io';
 import 'dart:async';
 
-main() async {
+main(List<String> args) async {
+  print(args);
+
   // Connect to a web socket.
   final socket = await WebSocket.connect('ws://127.0.0.1:8080/ws');
 

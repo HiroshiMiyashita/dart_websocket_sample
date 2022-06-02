@@ -1,7 +1,9 @@
 import 'dart:io';
 import 'dart:async';
 
-void main() {
+main(List<String> args) {
+  print(args);
+
   HttpServer.bind('127.0.0.1', 8080).then((HttpServer server) {
     server
         .where((request) => request.uri.path == '/ws')
